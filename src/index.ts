@@ -3,7 +3,7 @@ import { promises as fs } from 'fs';
 import simpleGit from 'simple-git';
 import * as cron from "node-cron";
 
-const commit = (async () => {
+(async () => {
     //console.log(`${__dirname}`);
     const gitPath = path.resolve(__dirname, '..');
     console.log(gitPath);
@@ -22,9 +22,9 @@ const commit = (async () => {
     catch(err) {
         console.log("Error", err);
     }
-});
+})();
 
 
-cron.schedule('0 45 23 * * *', async() => {
-    await commit();
-});
+// cron.schedule('0 45 23 * * *', async() => {
+//     await commit();
+// });

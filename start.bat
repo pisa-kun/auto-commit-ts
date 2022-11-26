@@ -1,0 +1,1 @@
+node C:\Develop\typescript\taskscheduler\dist\index.js
