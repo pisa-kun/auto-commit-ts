@@ -14,6 +14,12 @@ https://neos21.net/blog/2020/07/24-01.html
 > npm i --save-dev jest @types/jest ts-jest
 
 > npm install --save-dev simple-git
+
+> npm install --save node-cron  
+> npm i --save-dev @types/node-cron
+
+> npm install -g pm2  
+> npm install -g pm2-windows-startup
 ---
 
 npx jest --init で初期設定
@@ -89,3 +95,9 @@ export default {
 
 
 #### omake memo
+
+> pm2 start .\dist\index.js
+
+> pm2 save
+
+> pm2-startup install
